@@ -4,7 +4,7 @@
       <div class="filter"></div>
       <img src="..\assets\human-leg-barbell-exercise-equipment-physical-fitness-calf-leg-1549729-pxhere.com.jpg" alt="">
       <div class="welcome-message">
-        <h1>Bienvenue</h1>
+        <h1 id="title">Bienvenue</h1>
         <p id="subtitle">Viens croustiller d’effort et frire tes limites !</p>
       </div>
     </div>
@@ -40,6 +40,13 @@ img {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+#id {
+  font-family: "Lexend Mega";
+  font-size: 96px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+  font-weight: normal;
 }
 #subtitle {
   font-size: 40px;

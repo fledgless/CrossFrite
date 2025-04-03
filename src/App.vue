@@ -21,17 +21,19 @@
 /* Lexend Exa (nav) */
 /* Lexend Mega (h1) */
 /* Diphylleia (sous-titre) */
-@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Lexend+Exa:wght@100..900&family=Lexend+Mega:wght@100..900&family=Major+Mono+Display&display=swap');
+/* Lateef */
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Lateef:wght@200;300;400;500;600;700;800&family=Lexend+Exa:wght@100..900&family=Lexend+Mega:wght@100..900&family=Major+Mono+Display&display=swap');
 body {
   margin: 0;
   font-family: "Diphylleia";
+  color: #FFE9E9;
 }
 h1 {
   font-family: "Lexend Mega";
-  font-size: 96px;
-  color: #FFFFFF;
-  margin-bottom: 5px;
+  font-size: 56px;
+  color: #FFE9E9;
   font-weight: normal;
+  margin: 25px;
 }
 nav {
   background-color: #833F3F;
@@ -39,7 +41,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 125px;
+  height: 100px;
 }
 nav div {
   margin: 50px;
