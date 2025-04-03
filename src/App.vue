@@ -13,16 +13,25 @@
   </div>
 </template>
 
+
 <style>
 /* import GoogleFonts en vue js */
 
-/* Major Mono Display */
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-/* Lexend Exa */
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
-
+/* Major Mono Display (logo) */
+/* Lexend Exa (nav) */
+/* Lexend Mega (h1) */
+/* Diphylleia (sous-titre) */
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Lexend+Exa:wght@100..900&family=Lexend+Mega:wght@100..900&family=Major+Mono+Display&display=swap');
 body {
   margin: 0;
+  font-family: "Diphylleia";
+}
+h1 {
+  font-family: "Lexend Mega";
+  font-size: 96px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+  font-weight: normal;
 }
 nav {
   background-color: #833F3F;
@@ -30,7 +39,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
+  height: 125px;
 }
 nav div {
   margin: 50px;
