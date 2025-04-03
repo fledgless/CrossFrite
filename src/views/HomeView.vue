@@ -5,11 +5,5 @@
       <p>Coach 1 : Jean Dupont</p>
       <p>Coach 2 : Marie Curie</p>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: "Home",
-  };
-  </script>
+</template>
   

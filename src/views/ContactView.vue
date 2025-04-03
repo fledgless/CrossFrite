@@ -16,8 +16,4 @@
     </div>
 </template>
 
-<script>
-    export default {
-        name: "Contact",
-    };
-</script>
+<!-- export avec la balise script n'est plus nécessaire avec Vue3 et est fait directement dans le router -->

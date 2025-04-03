@@ -1,12 +1,7 @@
-import Vue from 'vue'
+// changement de la méthode pour monter l'appli avec la fonction createApp
+// le router est maintenant créé ici
+import { createApp } from 'vue';
 import App from './App.vue'
 import router from './router'
-import "./assets/style.css";
 
-
-Vue.config.productionTip = false
-
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+createApp(App).use(router).mount('#app');
