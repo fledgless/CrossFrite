@@ -100,6 +100,9 @@ img {
   margin: 0;
 }
 #conditions {
+  display: none;
+}
+#conditions.open {
   position: absolute;
   width: 900px;
   display: flex;
@@ -111,14 +114,14 @@ img {
   padding: 30px;
   border: 1px solid #D9D9D9;
 }
-#conditions h2 {
+#conditions.open h2 {
   color: #FFE9E9;
   font-size: 40px;
   font-family: "Lexend Mega";
   font-weight: normal;
   margin-top: 5px;
 }
-#conditions p {
+#conditions.open p {
   color: #FFE9E9;
   font-size: 16px;
   font-family: "Lexend Mega";
