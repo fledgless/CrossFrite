@@ -2,7 +2,7 @@
   <div id="subscription">
     <div class="background">
       <div class="filter"></div>
-      <img src="..\assets\human-leg-barbell-exercise-equipment-physical-fitness-calf-leg-1549729-pxhere.com.jpg" alt="">
+      <img src="..\assets\pexels-photo-1552252.jpg" alt="">
     </div>
     <div class="content">
       <h1>Nos abonnements</h1>
@@ -56,7 +56,6 @@ const showConditions = ref(false);
 
 <style scoped>
 .background {
-  height: 700px;
   overflow: hidden;
   position: absolute;
 
@@ -83,7 +82,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 25%;
-  height: 110%;
+  height: 100%;
   align-items: center;
   border: 1px solid #FFE9E9;
   justify-content: space-evenly;

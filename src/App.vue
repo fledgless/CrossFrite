@@ -40,7 +40,7 @@ h2 {
   font-size: 48px;
   color: #FFE9E9;
   font-weight: normal;
-  margin-top: 60px;
+  margin-top: 75px;
   text-align: center;
 }
 nav {
@@ -68,6 +68,7 @@ nav a {
 }
 .background {
   height: 650px;
+  width: 100%;
   overflow: hidden;
   position: relative;
   display: flex;

@@ -14,9 +14,25 @@
       <h2>Nos coachs</h2>
       <div class="content">
         <div class="coach">
-          <img src="" alt="" class="photo">
+          <div class="image-container">
+            <img src="../assets/image-coach.jpeg" alt="Photo du coach Mathieu Laurens">
+          </div>
+          <p>
+            LAURENS
+            <br>
+            Mathieu
+          </p>
         </div>
-        <div class="coach"></div>
+        <div class="coach">
+          <p id="right">
+            DEMARET
+            <br>
+            Vanessa
+          </p>
+          <div class="image-container">
+            <img src="../assets/image-coach1.jpeg" alt="Photo du coach Vanessa Demaret">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -59,5 +75,29 @@
   background: rgb(147,79,79);
   background: linear-gradient(180deg, rgba(147,79,79,1) 0%, rgba(45,24,24,1) 100%);
 }
-
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.coach {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0;
+}
+.coach p {
+  font-family: "Lexend Exa";
+  font-size: 32px;
+  margin: 50px;
+}
+.coach img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#right {
+  text-align: right;
+}
 </style>
