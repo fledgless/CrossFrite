@@ -8,28 +8,28 @@
           <p class="type">Mensuel</p>
           <p class="price"><b>14€</b>99</p>
           <div class="conditions">
-            <p>Voir plus</p>
+            <p @click="showConditions = true">Voir plus</p>
           </div>
         </div>
         <div class="subscription" id="trimestriel">
           <p class="type">Trimestriel</p>
           <p class="price"><b>54€</b>99</p>
           <div class="conditions">
-            <p>Voir plus</p>
+            <p @click="showConditions = true">Voir plus</p>
           </div>
         </div>
         <div class="subscription" id="yearly">
           <p class="type">Annuel</p>
           <p class="price"><b>159€</b>99</p>
           <div class="conditions">
-            <p>Voir plus</p>
+            <p @click="showConditions = true">Voir plus</p>
           </div>
         </div>
       </div>
-      <div id="conditions">
+      <div id="conditions" :class="{ 'open': showConditions }">
         <div>
           <h2>Conditions générales</h2>
-          <div class="closeBtn"></div>
+          <div @click="showConditions = false">close</div>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut turpis consequat, pharetra ex a, posuere massa. Curabitur dignissim neque sem, non vestibulum purus feugiat at. Donec quis magna congue metus interdum laoreet. Mauris vehicula risus euismod risus porta fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque vehicula lacus at odio venenatis cursus.</p>
         <p>Integer sed orci sit amet diam viverra blandit. Maecenas pretium pellentesque ipsum nec consectetur. Vivamus eget risus id felis consequat eleifend. Quisque tempor elit sed tempus suscipit. Praesent hendrerit porttitor tellus et bibendum. Nam id nunc ac erat scelerisque sagittis. Duis ornare eget magna vehicula dignissim.</p>
@@ -40,8 +40,8 @@
 </template>
 
 <script setup>
-const subButton = document.querySelectorAll('.conditions');
-const conditionDiv = document.querySelector('#conditions');
+import { ref } from 'vue';
+const showConditions = ref(false);
 </script>
   
 <!-- export avec la balise script n'est plus nécessaire avec Vue3 et est fait directement dans le router -->
@@ -95,6 +95,7 @@ img {
   font-family: "Lateef";
   padding: 15px 40px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .conditions p {
   margin: 0;
