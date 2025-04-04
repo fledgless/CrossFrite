@@ -7,7 +7,7 @@ import SubscriptionView from "@/views/SubscriptionView.vue";
 import ContactView from "@/views/ContactView.vue";
 
 // Vue.use(Router);
-// maintenant implémenté dans le main.js au moment de monter l'application
+// import router maintenant dans main.js
 // export default new Router plus utilisé avec vue 3, on utilise une constante
 
 const routes =  [
