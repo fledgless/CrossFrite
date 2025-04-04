@@ -1,6 +1,7 @@
 <template>
     <div id="contact">
         <div class="background">
+            <div class="filter"></div>
             <img src="..\assets\girl-woman-dark-female-concert-training-1175878-pxhere.com (1).jpg" alt="">
         </div>
         <div class="content">
@@ -61,6 +62,7 @@ img {
   align-items: center;
   width: 100%;
   height: 600px;
+  z-index: 2;
 }
 .container {
     display: flex;

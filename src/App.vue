@@ -35,6 +35,14 @@ h1 {
   font-weight: normal;
   margin: 25px;
 }
+h2 {
+  font-family: "Lexend Mega";
+  font-size: 48px;
+  color: #FFE9E9;
+  font-weight: normal;
+  margin-top: 60px;
+  text-align: center;
+}
 nav {
   background-color: #833F3F;
   padding: 10px;
@@ -57,5 +65,24 @@ nav a {
   font-family: 'Lexend Exa';
   margin: 35px;
   font-size: 32px;
+}
+.background {
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+.background img {
+  width: 100%;
+}
+.filter {
+  position: absolute;
+  background-color: #0000005b;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 </style>

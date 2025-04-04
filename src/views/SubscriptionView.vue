@@ -1,6 +1,7 @@
 <template>
   <div id="subscription">
     <div class="background">
+      <div class="filter"></div>
       <img src="..\assets\human-leg-barbell-exercise-equipment-physical-fitness-calf-leg-1549729-pxhere.com.jpg" alt="">
     </div>
     <div class="content">
@@ -58,6 +59,7 @@ const showConditions = ref(false);
   height: 700px;
   overflow: hidden;
   position: absolute;
+
 }
 img {
   width: 100%;
@@ -69,6 +71,7 @@ img {
   align-items: center;
   width: 100%;
   height: 600px;
+  z-index: 2;
 }
 .subscriptions {
   display: flex;
