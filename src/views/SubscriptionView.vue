@@ -55,14 +55,13 @@ const showConditions = ref(false);
 </script>
 
 <style scoped>
+/* changement de style pour background */
 .background {
   overflow: hidden;
   position: absolute;
+}
 
-}
-img {
-  width: 100%;
-}
+/* style pour les conteneurs */
 .content {
   position: absolute;
   display: flex;
@@ -78,6 +77,8 @@ img {
   height: 100%;
   justify-content: space-evenly;
 }
+
+/* style pour chaque abonnement */
 .subscriptions .subscription {
   display: flex;
   flex-direction: column;
@@ -101,6 +102,8 @@ img {
   font-weight: normal;
   font-size: 64px;
 }
+
+/* style pour les conditions générales d'utilisation */
 .conditions {
   border: 1px solid black;
   background-color: #D9D9D9;

@@ -44,6 +44,7 @@
 <!-- export avec la balise script n'est plus nécessaire avec Vue3 et est fait directement dans le router -->
 
 <style scoped>
+/* changement de style pour background */
 .background {
     height: 650px;
     overflow: hidden;
@@ -52,9 +53,8 @@
     align-content: center;
     flex-wrap: wrap;
 }
-img {
-  width: 100%;
-}
+
+/* style pour les conteneurs */
 .content {
   position: absolute;
   display: flex;
@@ -69,6 +69,8 @@ img {
     width: 100%;
     justify-content: space-evenly;
 }
+
+/* style formulaire */
 form, .contact-info {
     display: flex;
     flex-direction: column;
@@ -105,6 +107,8 @@ button {
     cursor: pointer;
     margin-top: 2px;
 }
+
+/* style contact */
 iframe {
     width: 400px;
     height: 300px;
