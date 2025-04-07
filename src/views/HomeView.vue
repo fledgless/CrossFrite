@@ -41,12 +41,15 @@
 <!-- export avec la balise script n'est plus nécessaire avec Vue3 et est fait directement dans le router -->
 
 <style scoped>
+/* style pour la div principale */
 .welcome {
   display: flex;
   justify-content: center;
   height: 650px;
   overflow: hidden;
 }
+
+/* style de la partie message d'accueil */
 .welcome-message {
   position: absolute;
   height: 100%;
@@ -68,6 +71,8 @@
   color: white;
   margin-top: 5px;
 }
+
+/* style pour la partie des coachs */
 .coachs {
   height: 500px;
   width: 100%;

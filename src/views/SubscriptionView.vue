@@ -1,16 +1,28 @@
+<script setup>
+// export n'est plus nécessaire avec Vue3 et est fait directement dans le router
+// import ref pour gérer les événements
+import { ref } from 'vue';
+// booléen pour gérer l'apparition des conditions générales (équivalent d'un addEventListener + classList)
+const showConditions = ref(false);
+</script>
+
 <template>
   <div id="subscription">
     <div class="background">
+      <!-- image de fond -->
       <div class="filter"></div>
       <img src="..\assets\pexels-photo-1552252.jpg" alt="">
     </div>
     <div class="content">
+      <!-- différents abonnements -->
       <h1>Nos abonnements</h1>
       <div class="subscriptions">
+        <!--  -->
         <div class="subscription" id="monthly">
           <p class="type">Mensuel</p>
           <p class="price"><b>14€</b>99</p>
           <div class="conditions">
+            <!-- @click sur les boutons pour changer la valeur du booléen -->
             <p @click="showConditions = true">Voir plus</p>
           </div>
         </div>
@@ -29,6 +41,8 @@
           </div>
         </div>
       </div>
+      <!-- conditions générales (display none de base) -->
+      <!-- :class sur la div pour lui indiquer de rajouter la classe open quand showConditions = true -->
       <div id="conditions" :class="{ 'open': showConditions }">
         <div>
           <h2>Conditions générales</h2>
@@ -44,25 +58,14 @@
   </div>
 </template>
 
-<script setup>
-// export n'est plus nécessaire avec Vue3 et est fait directement dans le router
-// import ref pour gérer les événements
-import { ref } from 'vue';
-// booléen pour gérer l'apparition des conditions générales (équivalent d'un addEventListener + classList)
-// @click sur les boutons pour changer la valeur du booléen
-// :class sur la div pour lui indiquer de rajouter la classe open quand showConditions = true
-const showConditions = ref(false);
-</script>
-
 <style scoped>
+/* changement de style pour background */
 .background {
   overflow: hidden;
   position: absolute;
+}
 
-}
-img {
-  width: 100%;
-}
+/* style pour les conteneurs */
 .content {
   position: absolute;
   display: flex;
@@ -78,6 +81,8 @@ img {
   height: 100%;
   justify-content: space-evenly;
 }
+
+/* style pour chaque abonnement */
 .subscriptions .subscription {
   display: flex;
   flex-direction: column;
@@ -101,6 +106,8 @@ img {
   font-weight: normal;
   font-size: 64px;
 }
+
+/* style pour les conditions générales d'utilisation */
 .conditions {
   border: 1px solid black;
   background-color: #D9D9D9;
