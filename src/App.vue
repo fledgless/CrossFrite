@@ -28,6 +28,8 @@ body {
   font-family: "Diphylleia";
   color: #FFE9E9;
 }
+
+/* style général de l'application */
 h1 {
   font-family: "Lexend Mega";
   font-size: 56px;
@@ -43,6 +45,8 @@ h2 {
   margin-top: 75px;
   text-align: center;
 }
+
+/* barre de navigation */
 nav {
   background-color: #833F3F;
   padding: 10px;
@@ -66,6 +70,8 @@ nav a {
   margin: 35px;
   font-size: 32px;
 }
+
+/* style des images de fond pour les pages */
 .background {
   height: 650px;
   width: 100%;
